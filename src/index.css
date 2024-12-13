@@ -1,0 +1,14 @@
+:root{
+    --mainpcolor:white;
+    --button-color:linear-gradient(to right,rgb(79, 0, 113),rgb(197, 86, 191));
+    --background-color:rgba(32, 12, 52, 0.955);
+    --licolor:rgba(240, 248, 255, 0.192);
+    --webkit-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+    --moz-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+    --box-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+}
+body{
+    background-color:var(--background-color) ;
+    overflow-x: hidden;
+    width: 100%;
+}

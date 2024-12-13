@@ -1,0 +1,203 @@
+:root{
+    --mainpcolor:white;
+    --button-color:linear-gradient(to right,rgb(143, 7, 171),rgb(255, 199, 252));
+    --background-color:rgba(43, 17, 74, 0.955);
+    --licolor:rgba(240, 248, 255, 0.192);
+    --webkit-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+    --moz-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+    --borderradius:0.4rem;
+    --box-shadow:inset 0px 0px 8px -1px rgba(60,43,87,1);
+    --header-color:rgb(14, 14, 48);
+    --icolor:rgba(255, 255, 255, 0.365);
+    --hsize:2rem;
+    --psize:0.9rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Footer{
+    overflow-y: hidden;
+     padding:0rem 10rem 10rem 10rem;;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    header{
+        align-items: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap:1rem;
+            color: var(--mainpcolor);
+                li{ 
+                            cursor: pointer;
+                            padding: 0 1rem 0 1rem;
+                            height: 2rem;
+                            background-color: rgba(255, 255, 255, 0.121);
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                }
+        }
+    }
+        
+        section{
+            align-items: center;
+            width: 100%;
+            color: var(--mainpcolor);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+                ul{ 
+                    cursor: pointer;
+                    gap:1rem ;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    
+                        li{
+                        
+                            padding: 0 1rem 0 1rem;
+                            align-items: center;
+                            height: 2rem;
+                            background-color: rgba(255, 255, 255, 0.121);
+                            display: flex;
+                            flex-direction: row;
+                            gap: 8rem;
+                        }
+                }
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 30vh;
+            justify-content: space-between;
+                h1{
+                    font-size: var(--hsize);
+                    color: var(--mainpcolor);
+                }
+                p{
+                    color: var(--mainpcolor);
+                    font-size: var(--psize);
+                }
+                input{
+                    background-color: var(--licolor);
+                    border: none;
+                    height: 2rem;
+                    width: 20rem;
+                    color: var(--mainpcolor);
+                    &:focus{
+                       outline:none;
+                    }
+                }
+                button{
+                    border: none;
+                    height: 2rem;
+                    width: 10rem;
+                    background: var(--button-color);
+                    color: var(--mainpcolor);
+                }
+                a{
+                    text-decoration: none;
+                    color: var(--mainpcolor);
+                    font-size: 2
+                    rem;
+                }
+    }
+    }
+@media screen and (max-width:768px){
+    .Footer{
+        padding: 0;
+        padding-top: 2rem;
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        header{
+            
+            text-align: center;
+            height: 20rem;
+            width: 100%;
+           
+            ul{
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                gap:1rem;
+                color: var(--mainpcolor);
+                   li{          display: flex;
+                                justify-content: center; /* Yatayda ortalar */
+                                align-items: center;    
+                                padding: 0;
+                                cursor: pointer;
+                                width: 100%;
+                                height: 3rem;
+                                background-color: rgba(255, 255, 255, 0.121);
+                                align-items: center;
+                                
+                   }
+           }
+       }
+       section{
+        flex-direction: column;
+        gap: 1rem;
+       }
+
+    
+
+       footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        height: 100vh;
+        justify-content: space-between;
+            h1{
+                font-size: var(--hsize);
+                color: var(--mainpcolor);
+            }
+            p{
+                text-align: center;
+                color: var(--mainpcolor);
+                font-size: var(--psize);
+            }
+            input{
+                background-color: var(--licolor);
+                border: none;
+                height: 2rem;
+                width: 20rem;
+                color: var(--mainpcolor);
+                &:focus{
+                   outline:none;
+                }
+            }
+            button{
+                border: none;
+                height: 2rem;
+                width: 10rem;
+                background: var(--button-color);
+                color: var(--mainpcolor);
+            }
+            a{
+                text-decoration: none;
+                color: var(--mainpcolor);
+                font-size: 2rem;
+            }
+}
+    }
+}
